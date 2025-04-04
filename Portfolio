@@ -1,0 +1,103 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rathish Kumar - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f4f4f4;
+            animation: fadeIn 1s ease-in-out;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            animation: slideInDown 1s ease-in-out;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        section:hover {
+            transform: scale(1.05);
+        }
+        button {
+            padding: 10px 20px;
+            background: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideInDown {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rathish Kumar</h1>
+        <p>Aspiring Police Officer | Sports Enthusiast</p>
+    </header><section id="about">
+    <h2>About Me</h2>
+    <p>A dedicated and hardworking individual with a passion for sports and fitness. Aspiring to become a police officer.</p>
+    <button onclick="showMessage('About Me')">Know More</button>
+</section>
+
+<section id="sports">
+    <h2>Sports Achievements</h2>
+    <ul>
+        <li>University of Madras Kabaddi B-Zone Match</li>
+        <li>Kabaddi CM Trophy</li>
+        <li>Cricket Enthusiast</li>
+        <li>Running and Fitness Training</li>
+    </ul>
+    <button onclick="showMessage('Sports Achievements')">View More</button>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>Sports Leadership</li>
+        <li>Team Management</li>
+        <li>Hard Work & Dedication</li>
+        <li>Strategic Thinking</li>
+    </ul>
+    <button onclick="showMessage('Skills')">Explore</button>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:Rathishkumar5310@gmail.com">Rathishkumar5310@gmail.com</a></p>
+    <p>Phone: <a href="tel:+919363164611">9363164611</a></p>
+    <button onclick="alert('Contact me via email or phone!')">Get in Touch</button>
+</section>
+
+<script>
+    function showMessage(section) {
+        alert(`More about ${section}`);
+    }
+</script>
+
+</body>
+</html>
